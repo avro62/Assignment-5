@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Hotline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-white shadow-lg px-6">
+    <div class="flex-1 flex items-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="logo" class="w-8 mr-2">
+      <span class="text-xl font-bold">Emergency Hotline</span>
+    </div>
+    <div class="flex gap-6 items-center font-semibold">
+      <span>❤️ <span id="heartCount">0</span></span>
+      <span>🪙 <span id="coinCount">100</span></span>
+      <span>📋 <span id="copyCount">0</span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-red-500 to-pink-500 text-center py-16 text-white">
+    <img src="https://cdn-icons-png.flaticon.com/512/484/484582.png" alt="hero-logo" class="mx-auto w-16 mb-4">
+    <h1 class="text-4xl font-bold mb-2">Emergency Hotline Directory</h1>
+    <p class="text-lg">Your Lifeline in Times of Need</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="grid md:grid-cols-3 gap-6 p-6">
+
+    <!-- Card Section -->
+    <div class="md:col-span-2 grid sm:grid-cols-2 gap-4" id="cardSection">
+
+      <!-- Card Template Start -->
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">🚑 Ambulance</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Ambulance Service</p>
+        <p class="font-bold text-lg">📞 999</p>
+        <span class="badge badge-outline mt-2">Health</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">🚓 Police</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Police Service</p>
+        <p class="font-bold text-lg">📞 100</p>
+        <span class="badge badge-outline mt-2">Law</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">🔥 Fire Service</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Fire Emergency</p>
+        <p class="font-bold text-lg">📞 102</p>
+        <span class="badge badge-outline mt-2">Rescue</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">⛽ Gas Emergency</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Gas Service</p>
+        <p class="font-bold text-lg">📞 16496</p>
+        <span class="badge badge-outline mt-2">Utility</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">💡 Electricity</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Electricity Service</p>
+        <p class="font-bold text-lg">📞 16999</p>
+        <span class="badge badge-outline mt-2">Utility</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-lg p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-lg">👩 Women Helpline</h2>
+          <button class="heart-btn text-red-500 text-xl">❤️</button>
+        </div>
+        <p class="text-sm text-gray-600">Women Support Service</p>
+        <p class="font-bold text-lg">📞 109</p>
+        <span class="badge badge-outline mt-2">Support</span>
+        <div class="flex justify-between mt-4">
+          <button class="btn btn-outline btn-sm copy-btn">📋 Copy</button>
+          <button class="btn btn-primary btn-sm call-btn">📞 Call</button>
+        </div>
+      </div>
+      <!-- Card Template End -->
+
+    </div>
+
+    <!-- History Section -->
+    <div class="bg-white shadow-lg p-4 rounded">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold">📜 Call History</h2>
+        <button id="clearHistory" class="btn btn-sm btn-error">Clear History</button>
+      </div>
+      <ul id="historyList" class="space-y-2 text-sm text-gray-700">
+        <!-- History items will be added here -->
+      </ul>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script>
+    const heartCount = document.getElementById("heartCount");
+    const coinCount = document.getElementById("coinCount");
+    const copyCount = document.getElementById("copyCount");
+    const historyList = document.getElementById("historyList");
+    const clearHistory = document.getElementById("clearHistory");
+
+    // ❤️ Heart Button
+    document.querySelectorAll(".heart-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        heartCount.textContent = parseInt(heartCount.textContent) + 1;
+      });
+    });
+
+    // 📋 Copy Button
+    document.querySelectorAll(".copy-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const card = btn.closest(".card");
+        const number = card.querySelector("p.font-bold").innerText.replace("📞 ", "");
+        navigator.clipboard.writeText(number);
+        alert(`Number ${number} copied!`);
+        copyCount.textContent = parseInt(copyCount.textContent) + 1;
+      });
+    });
+
+    // 📞 Call Button
+    document.querySelectorAll(".call-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const card = btn.closest(".card");
+        const serviceName = card.querySelector("h2").innerText;
+        const number = card.querySelector("p.font-bold").innerText.replace("📞 ", "");
+
+        let coins = parseInt(coinCount.textContent);
+        if (coins < 20) {
+          alert("Not enough coins to make a call!");
+          return;
+        }
+
+        // Deduct coins
+        coinCount.textContent = coins - 20;
+
+        // Alert
+        alert(`Calling ${serviceName} at ${number}`);
+
+        // Add to history with time
+        const time = new Date().toLocaleTimeString();
+        const li = document.createElement("li");
+        li.textContent = `${serviceName} - ${number} (at ${time})`;
+        historyList.appendChild(li);
+      });
+    });
+
+    // 🗑️ Clear History
+    clearHistory.addEventListener("click", () => {
+      historyList.innerHTML = "";
+    });
+  </script>
+</body>
+</html>

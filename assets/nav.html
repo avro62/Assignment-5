@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Hotline</title>
+  <title>Emergency Service</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="bg-gray-100">
 
   <!-- Navbar -->
-  <nav class="navbar bg-white shadow-lg px-6">
-    <div class="flex-1 flex items-center">
-      <img src="./assets/logo.png" alt="logo" class="w-8 mr-2">
-      <div class="text-xl font-bold text-green-700">
-        <p>Emergency</p>
-        <p>Service</p>
-      </div>
+  <div class="navbar bg-base-100 shadow">
+    <!-- Left side -->
+    <div class="flex items-center gap-2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/National_Emblem_of_Bangladesh.svg" 
+           alt="logo" class="w-10 h-10">
+      <span class="text-xl font-bold text-green-700">Emergency <br> Service</span>
     </div>
-      <!-- Right side -->
+
+    <!-- Right side -->
     <div class="ml-auto flex items-center gap-4">
       
       <!-- Heart counter -->
       <div class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-full">
         <span id="heartCount" class="font-bold">0</span>
-        <span class="text-red-500 text-lg"><img class="w-4" src="./assets/heart.png" alt=""></span>
+        <span class="text-red-500 text-lg"><img class="w-4" src="./heart.png" alt=""></span>
       </div>
 
       <!-- Coin counter -->
       <div class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-full">
         <span id="coinCount" class="font-bold">100</span>
-        <span class="text-yellow-500 text-lg"><img class="w-4" src="./assets/coin.png" alt=""></span>
+        <span class="text-yellow-500 text-lg"><img class="w-4" src="./coin.png" alt=""></span>
       </div>
 
       <!-- Copy counter -->
@@ -38,4 +38,7 @@
         <span id="copyCount">2</span> Copy
       </button>
     </div>
-  </nav>
+  </div>
+
+</body>
+</html>
